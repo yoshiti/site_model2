@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Гардероб по характеру — капсульный гардероб по типу личности. Тёмный editorial-сервис онлайн-стилиста.">
+<title>ГАРДЕРОБ ПО ХАРАКТЕРУ — капсула по типу личности</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="progress" aria-hidden="true"></div>
+
+<header id="header">
+  <div class="header-inner">
+    <a class="logo" href="#top">Гардероб <span>по характеру</span></a>
+    <nav class="desktop" aria-label="Основная навигация">
+      <ul>
+        <li><a href="#about">О сервисе</a></li>
+        <li><a href="#how">Как это работает</a></li>
+        <li><a href="#test">Тест</a></li>
+        <li><a href="#gallery">Образы</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+      <i></i><i></i><i></i>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="Мобильная навигация">
+  <ul>
+    <li><a href="#about">О сервисе</a></li>
+    <li><a href="#how">Как это работает</a></li>
+    <li><a href="#test">Тест</a></li>
+    <li><a href="#gallery">Образы</a></li>
+    <li><a href="#reviews">Отзывы</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+  </ul>
+</nav>
+
+<main id="top">
+
+<section class="hero" aria-label="Вступление">
+  <div class="hero-bg" id="heroBg">
+    <img src="https://i.pinimg.com/1200x/db/ec/8d/dbec8d51f64c62b31b55bfabe4c44df7.jpg"
+         alt="Тёмный fashion-editorial: модель в винтажном образе" fetchpriority="high">
+  </div>
+  <div class="hero-content">
+    <p class="eyebrow reveal">Онлайн-стилист / капсульный гардероб</p>
+    <h1 class="reveal">Одежда<br>по <em>характеру</em>,<br>а не по тренду</h1>
+    <div class="hero-sub reveal">
+      <p class="lead dim" style="margin:0">
+        Короткий тест на тип личности — и точный список вещей, которые работают
+        именно на вас. Без лишнего, без случайных покупок.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn--solid" href="#test">Пройти тест</a>
+        <a class="btn" href="#gallery">Смотреть образы</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Романтик</span><span><b>·</b></span>
+    <span>Минималист</span><span><b>·</b></span>
+    <span>Творец</span><span><b>·</b></span>
+    <span>Классик</span><span><b>·</b></span>
+    <span>Романтик</span><span><b>·</b></span>
+    <span>Минималист</span><span><b>·</b></span>
+    <span>Творец</span><span><b>·</b></span>
+    <span>Классик</span><span><b>·</b></span>
+  </div>
+</div>
+
+<section id="about" aria-labelledby="aboutTitle">
+  <div class="about-head">
+    <div class="reveal">
+      <p class="eyebrow">01 — О сервисе</p>
+      <h2 id="aboutTitle">Гардероб<br>как продолжение<br>себя</h2>
+    </div>
+    <div class="reveal">
+      <p class="lead">
+        Мы не продаём вещи и не советуем «модное». Мы собираем капсулу вокруг
+        вашего характера: ритма, темперамента, способа занимать пространство.
+      </p>
+      <p class="dim" style="font-size:14.5px">
+        На выходе — короткий список базовых позиций, палитра и логика сочетаний,
+        по которой дальше можно собирать вещи годами.
+      </p>
+    </div>
+  </div>
+  <div class="cards">
+    <article class="card reveal">
+      <h3>Точность</h3>
+      <p>Тип личности — не ярлык, а инструмент. Он объясняет, почему одни вещи живут в шкафу годами, а другие не носятся ни разу.</p>
+    </article>
+    <article class="card reveal">
+      <h3>Капсула</h3>
+      <p>Пять-шесть позиций, из которых собирается больше двадцати комплектов. Меньше вещей — больше образов.</p>
+    </article>
+    <article class="card reveal">
+      <h3>Без брендов</h3>
+      <p>Мы говорим о крое, цвете и силуэте, а не о логотипах. Это работает при любом бюджете и в любом городе.</p>
+    </article>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="how" aria-labelledby="howTitle">
+  <div class="reveal" style="margin-bottom:clamp(34px,5vw,70px)">
+    <p class="eyebrow">02 — Как это работает</p>
+    <h2 id="howTitle">Четыре шага</h2>
+  </div>
+  <div class="steps">
+    <div class="step reveal">
+      <span class="num">01</span>
+      <div>
+        <h3>Тест</h3>
+        <p>Пять вопросов о том, как вы двигаетесь, выбираете и выглядите в повседневности.</p>
+      </div>
+    </div>
+    <div class="step reveal">
+      <span class="num">02</span>
+      <div>
+        <h3>Тип</h3>
+        <p>Система определяет один из четырёх профилей: Романтик, Минималист, Творец, Классик.</p>
+      </div>
+    </div>
+    <div class="step reveal">
+      <span class="num">03</span>
+      <div>
+        <h3>Капсула</h3>
+        <p>Вы получаете палитру и список базовых вещей, собранных под ваш профиль.</p>
+      </div>
+    </div>
+    <div class="step reveal">
+      <span class="num">04</span>
+      <div>
+        <h3>Образы</h3>
+        <p>Дальше — только сочетания. Смотрите галерею и повторяете логику на своих вещах.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="test" aria-labelledby="testTitle">
+  <div class="reveal" style="margin-bottom:clamp(28px,4vw,52px)">
+    <p class="eyebrow">03 — Тест</p>
+    <h2 id="testTitle">Определите<br>свой тип</h2>
+  </div>
+  <div class="quiz-wrap reveal">
+    <div id="quiz">
+      <div class="quiz-head">
+        <span class="quiz-counter" id="counter">Вопрос 1 / 5</span>
+        <span class="note">Тест развлекательный</span>
+      </div>
+      <form id="quizForm" novalidate></form>
+      <div class="quiz-actions">
+        <button class="btn" type="button" id="prevQ" hidden>← Назад</button>
+      </div>
+    </div>
+
+    <div class="result" id="result" aria-live="polite">
+      <p class="eyebrow">Ваш тип</p>
+      <div class="result-type" id="resType">—</div>
+      <p class="lead" id="resDesc" style="max-width:70ch"></p>
+      <div class="result-grid">
+        <div class="result-block">
+          <h3>Палитра</h3>
+          <div class="palette" id="resPalette"></div>
+        </div>
+        <div class="result-block">
+          <h3>База гардероба</h3>
+          <ul id="resItems"></ul>
+        </div>
+        <div class="result-block">
+          <h3>Логика</h3>
+          <p class="dim" id="resLogic" style="font-size:14.5px; margin:0"></p>
+        </div>
+      </div>
+      <div class="quiz-actions">
+        <button class="btn" type="button" id="restart">Пройти заново</button>
+        <span class="note">Тест развлекательный</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="gallery" aria-labelledby="galleryTitle">
+  <div class="reveal" style="margin-bottom:clamp(30px,4.5vw,60px)">
+    <p class="eyebrow">04 — Образы</p>
+    <h2 id="galleryTitle">Галерея<br>тёмного сезона</h2>
+    <p class="lead dim" style="margin-top:18px; font-size:14.5px">
+      Наведите на кадр — чёрно-белое вернётся в цвет.
+    </p>
+  </div>
+  <div class="gallery">
+    <a class="shot reveal" href="#gallery" aria-label="Образ: Романтик, vintage">
+      <img src="https://i.pinimg.com/1200x/db/ec/8d/dbec8d51f64c62b31b55bfabe4c44df7.jpg" alt="Тёмный editorial-кадр, винтажный образ" loading="lazy">
+      <span class="meta"><strong>Платье-пауза</strong><em>Романтик</em></span>
+      <span class="bar"></span>
+    </a>
+    <a class="shot reveal" href="#gallery" aria-label="Образ: Минималист">
+      <img src="https://i.pinimg.com/736x/40/d3/69/40d3690b222afb96ae843b74546a662f.jpg" alt="Минималистичный монохромный образ" loading="lazy">
+      <span class="meta"><strong>Прямая линия</strong><em>Минималист</em></span>
+      <span class="bar"></span>
+    </a>
+    <a class="shot reveal" href="#gallery" aria-label="Образ: Творец">
+      <img src="https://i.pinimg.com/736x/20/17/1c/20171ca5960a66f7168dc4922748d6d8.jpg" alt="Контрастный fashion-портрет в тёмной эстетике" loading="lazy">
+      <span class="meta"><strong>Слои и тень</strong><em>Творец</em></span>
+      <span class="bar"></span>
+    </a>
+    <a class="shot reveal" href="#gallery" aria-label="Образ: Классик">
+      <img src="https://i.pinimg.com/1200x/72/93/0d/72930de6f72869cc064fee0cad62bee9.jpg" alt="Классический тёмный образ, строгий крой" loading="lazy">
+      <span class="meta"><strong>Строгий силуэт</strong><em>Классик</em></span>
+      <span class="bar"></span>
+    </a>
+    <a class="shot reveal" href="#gallery" aria-label="Образ: Романтик, moody">
+      <img src="https://i.pinimg.com/1200x/ee/0f/e2/ee0fe29be9c665d88b577fffa851498d.jpg" alt="Тёмный романтичный образ с глубокими тенями" loading="lazy">
+      <span class="meta"><strong>Тонкая ткань</strong><em>Романтик</em></span>
+      <span class="bar"></span>
+    </a>
+    <a class="shot reveal" href="#gallery" aria-label="Образ: Творец, monochrome">
+      <img src="https://i.pinimg.com/1200x/8b/bc/41/8bbc41a2dcb78662a83ccafd7b0b1edb.jpg" alt="Монохромный концептуальный образ" loading="lazy">
+      <span class="meta"><strong>Асимметрия</strong><em>Творец</em></span>
+      <span class="bar"></span>
+    </a>
+    <a class="shot reveal" href="#gallery" aria-label="Образ: Минималист, dark">
+      <img src="https://i.pinimg.com/1200x/db/ec/8d/dbec8d51f64c62b31b55bfabe4c44df7.jpg" alt="Тёмный минималистичный кадр" loading="lazy">
+      <span class="meta"><strong>Ноль деталей</strong><em>Минималист</em></span>
+      <span class="bar"></span>
+    </a>
+    <a class="shot reveal" href="#gallery" aria-label="Образ: Классик, editorial">
+      <img src="https://i.pinimg.com/736x/40/d3/69/40d3690b222afb96ae843b74546a662f.jpg" alt="Строгий editorial-образ, тёмный фон" loading="lazy">
+      <span class="meta"><strong>Пальто и линия</strong><em>Классик</em></span>
+      <span class="bar"></span>
+    </a>
+    <a class="shot reveal" href="#gallery" aria-label="Образ: Творец, сезон 3">
+      <img src="https://i.pinimg.com/736x/20/17/1c/20171ca5960a66f7168dc4922748d6d8.jpg" alt="Тёмный fashion-кадр, сезонная коллекция" loading="lazy">
+      <span class="meta"><strong>Сезон III</strong><em>Творец</em></span>
+      <span class="bar"></span>
+    </a>
+    <a class="shot reveal" href="#gallery" aria-label="Образ: Романтик, vintage">
+      <img src="https://i.pinimg.com/1200x/72/93/0d/72930de6f72869cc064fee0cad62bee9.jpg" alt="Винтажный образ в тёмной тональности" loading="lazy">
+      <span class="meta"><strong>Винтаж</strong><em>Романтик</em></span>
+      <span class="bar"></span>
+    </a>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="reviews" aria-labelledby="reviewsTitle">
+  <div class="reveal" style="margin-bottom:clamp(30px,4.5vw,60px)">
+    <p class="eyebrow">05 — Отзывы</p>
+    <h2 id="reviewsTitle">Что говорят</h2>
+  </div>
+  <div class="reviews">
+    <article class="review reveal">
+      <p>«Впервые шкаф стал понятным. Раньше покупала всё подряд, теперь у меня семь вещей и они сочетаются между собой».</p>
+      <cite>Аня, 21 — Минималист</cite>
+    </article>
+    <article class="review reveal">
+      <p>«Тест попал в меня с первого раза. Оказалось, мой тип — Творец, и это объясняет, почему классика мне всегда казалась чужой».</p>
+      <cite>Кирилл, 24 — Творец</cite>
+    </article>
+    <article class="review reveal">
+      <p>«Спокойно, без давления и без рекламы брендов. Просто структура, по которой можно собрать гардероб самой».</p>
+      <cite>Марина, 28 — Классик</cite>
+    </article>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="contacts" aria-labelledby="contactsTitle">
+  <div class="contact-grid">
+    <div class="reveal">
+      <p class="eyebrow">06 — Контакты</p>
+      <h2 id="contactsTitle">Написать</h2>
+      <p class="lead dim" style="margin-top:18px; font-size:14.5px">
+        Форма пока работает в демо-режиме. Мы читаем каждое сообщение
+        и отвечаем в течение двух дней.
+      </p>
+      <form id="contactForm" aria-label="Форма обратной связи">
+        <div>
+          <label for="name">Имя</label>
+          <input id="name" name="name" type="text" placeholder="Как к вам обращаться" required>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="mail@example.com" required>
+        </div>
+        <div>
+          <label for="msg">Сообщение</label>
+          <textarea id="msg" name="msg" rows="4" placeholder="Ваш вопрос"></textarea>
+        </div>
+        <button class="btn btn--solid" type="submit" id="contactBtn">Отправить</button>
+      </form>
+    </div>
+    <div class="reveal">
+      <h3 style="margin-bottom:4px">Соцсети</h3>
+      <ul class="socials">
+        <li><a href="#contacts">Pinterest <span>↗</span></a></li>
+        <li><a href="#contacts">Instagram <span>↗</span></a></li>
+        <li><a href="#contacts">Telegram <span>↗</span></a></li>
+        <li><a href="#contacts">YouTube <span>↗</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <span>© <span id="year"></span> Гардероб по характеру</span>
+  <span>Тест развлекательный</span>
+  <span>Тёмный editorial, 2024</span>
+</footer>
+
+<button id="toTop" type="button" aria-label="Наверх">↑</button>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
