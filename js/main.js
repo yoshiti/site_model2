@@ -157,6 +157,8 @@ const TYPES = {
 const form = $('#quizForm');
 const counter = $('#counter');
 const prevBtn = $('#prevQ');
+const progressLabel = $('#quizProgressLabel');
+const progressFill = $('#quizProgressFill');
 
 QUESTIONS.forEach((item, qi) => {
   const block = document.createElement('div');
@@ -178,6 +180,13 @@ const questions = $$('.question', form);
 let currentQ = 0;
 let transitioning = false;
 
+function updateQuizProgress(){
+  const answered = Object.keys(answers).length;
+  progressLabel.innerHTML = `Отвечено <b>${answered}</b> из <b>${QUESTIONS.length}</b>`;
+  progressFill.style.width = (answered / QUESTIONS.length) * 100 + '%';
+}
+updateQuizProgress();
+
 function showQuestion(i){
   questions.forEach(q => q.classList.remove('is-active'));
   currentQ = i;
@@ -198,6 +207,7 @@ form.addEventListener('click', (e) => {
   $$(`.option[data-q="${qi}"]`, form).forEach(b => b.classList.remove('selected'));
   btn.classList.add('selected');
   answers[qi] = btn.dataset.v;
+  updateQuizProgress();
 
   if (qi === QUESTIONS.length - 1){
     showResult();
@@ -239,6 +249,7 @@ function showResult(){
 $('#restart').addEventListener('click', () => {
   Object.keys(answers).forEach(k => delete answers[k]);
   $$('.option', form).forEach(b => b.classList.remove('selected'));
+  updateQuizProgress();
   $('#result').classList.remove('show');
   $('#quiz').style.display = 'block';
   showQuestion(0);

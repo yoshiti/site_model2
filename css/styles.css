@@ -356,6 +356,35 @@ nav.desktop a:hover{color:var(--ink)}
   padding:clamp(22px,3.4vw,56px);
   background:var(--bg-2);
 }
+.quiz-progress{
+  margin-bottom:26px;
+  padding-bottom:18px;
+  border-bottom:1px solid var(--line);
+}
+.quiz-progress-label{
+  display:block;
+  font-size:11px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--ink-dim);
+  margin-bottom:12px;
+}
+.quiz-progress-label b{
+  color:var(--ink);
+  font-weight:700;
+}
+.quiz-progress-track{
+  height:2px;
+  background:var(--line);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+.quiz-progress-fill{
+  height:100%;
+  width:0%;
+  background:var(--ink);
+  transition:width .45s var(--ease);
+}
 .quiz-head{
   display:flex;
   flex-wrap:wrap;
